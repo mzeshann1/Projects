@@ -1,0 +1,44 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+.navmaindiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: aquamarine;
+}
+.navmaindivchild1{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.navmaindivchild2{
+    width: 60%;
+    height: auto;
+}
+.navmaindivchild2 ul{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#navdrop{
+    background-color: none;
+    border: none;
+}
+.navmaindivchild3{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#navbutton{
+    border-radius: 100px;
+    width: 40%;
+    height: 65%;
+}
