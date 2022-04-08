@@ -1,17 +1,23 @@
-*body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --white:#faf0e6;
     --colorblue:rgb(5, 5, 209);
     --navbtncolor:rgb(253, 174, 92);
+    --btncolor:#04D2C8;
+    --font-family: "Crimson Text", serif;
+    --font-weight: normal;
+    --font-style: normal;
 }
+
 
 
 .headermaindiv1{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -20,12 +26,13 @@
   background-image: url(../project1-pictures/banner.png.webp);
 
 }
-
+/* ======================================================================================================== */
 /* NAVIGATION BAR MAIN */
 
 .navmaindiv{
+    padding-top: 10px;
     width: 100%;
-    height: auto;
+    height: 10vh;
     display: flex;
     border-bottom: 0.5px solid #212529;
 }
@@ -39,7 +46,7 @@
     display: flex;
     justify-content: center;
     color: var(--white);
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 /* NAVIGATION BAR MIDDLE */
@@ -93,14 +100,13 @@
 .navmaindivchild3{
   width: 40%;
   height: auto;
-  padding-top: 5px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
   color: var(--white);
 }
 .navmaindivchild3 button{
-    margin-top: 9px;
     background:var(--navbtncolor);
     border-radius: 50px;
     width: 32%;
@@ -109,3 +115,187 @@
     border-image: initial;
     color: var(--white);
 }
+
+
+@media screen and (max-width:978px) {
+    .navmaindivchild3 button{
+        width: 50%;
+        height: 95%;
+    }
+    .navmaindivchild3{
+        width: 30%;
+    }    
+    .navmaindivchild3 {
+        margin-bottom: 5px ;
+    }
+}
+@media screen and (max-width:914px){
+    .navmaindivchild2{
+        width: 50%;
+    }
+    .navmaindivchild3{
+        width: 30%;
+    }
+}
+@media screen and (max-width:786px){
+    .navmaindivchild3{
+        display: none;
+    }
+    .navmaindivchild2{
+        width: 70%;
+    }
+    .navmaindivchild1{
+        width: 30%;
+    }
+}
+@media screen and (max-width:572px){
+    .navmaindivchild1{
+        display: none;
+    }
+    .navmaindivchild2{
+        width: 100%;
+    }
+}
+
+
+/* ======================================================================================================== */
+
+/* below the nav bar */
+
+.headermaindiv2{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.headermaindiv2child1{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.headermaindiv2child1 img{
+    height: 75vh;
+}
+.headermaindiv2child2{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding-top: 85px;
+    margin-left: -110px;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.headerbtn{
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 13px;
+    color:var(--white);
+    padding: 17px 50px;
+    background: var(--btncolor);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    width: 45%;
+    outline: medium none;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+}
+.headerbtn:hover{
+    border:1px solid var(--btncolor);
+    background-color: transparent;
+    color: var(--btncolor);
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width:1234px){
+    .headermaindiv2child1{
+        width: 50%;
+    }
+    .headermaindiv2child1 img{
+        width: 60%;
+    }
+    .headermaindiv2child2{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1076px){
+    .headerbtn{
+        width: 60%;
+    } 
+}
+@media screen and (max-width:1024px){
+    .headermaindiv2child2{
+        width: auto;
+    }
+    .headermaindiv2child1{
+        width: auto;
+    }
+}
+@media screen and (max-width:828px){
+    .headermaindiv2child2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:700px){
+    .headermaindiv2child1{
+        justify-content: left;
+    }
+    .headermaindiv2child2{
+        justify-content: left;
+    }
+}
+@media screen and (max-width:600px){
+    .headermaindiv2{
+        /* display: none; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .headermaindiv2child1{
+        width: 100%;
+        justify-content: center;
+    }
+    .headermaindiv2child2{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        padding-left: 85px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:398px){    
+    .headermaindiv2child1{
+        display: none;
+    }
+}
+
+
+/* ======================================================================================================== */
+
+/* below the nav bar tutorials section  */
+
+.tutmaindiv1{
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    padding: 200px 0 270px 0;
+}
+.tutmaindiv1child1{
+    width: 50%;
+    background-color: #04D2C8;
+}
+
+
