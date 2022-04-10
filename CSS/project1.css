@@ -12,6 +12,18 @@
     --font-family2:"Poppins", sans-serif;
     --font-weight: normal;
     --font-style: normal;
+    --circlecolor1:#FEB08F;
+    --circlecolor2:#8EC9FF;
+    --txtcolor: #1F1F1F;
+    --starcolor: yellow;
+    --hoverbtmcolor:red;
+}
+
+body{
+    font-family: var(--font-family2);
+    color: var(--txtcolor);
+    font-weight: normal;
+    font-style: normal;
 }
 .boxed_btn{
     cursor: pointer;
@@ -63,6 +75,9 @@
     justify-content: center;
     color: var(--white);
     padding-top: 10px;
+}
+#icon{
+    color: var(--btncolor);
 }
 
 /* NAVIGATION BAR MIDDLE */
@@ -122,6 +137,9 @@
   justify-content: space-around;
   color: var(--white);
 }
+.navmaindivchild3 a{
+    text-decoration: none;
+}
 .navmaindivchild3 button{
     background:var(--navbtncolor);
     border-radius: 50px;
@@ -131,6 +149,12 @@
     border-image: initial;
     color: var(--white);
 }
+.navmaindivchild3 button:hover{
+    background-color: transparent;
+    color: var(--navbtncolor);
+    border:1px solid var(--navbtncolor);
+}
+
 
 
 @media screen and (max-width:978px) {
@@ -264,7 +288,7 @@
         font-size: 30px;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:713px){
     .headermaindiv2child1{
         justify-content: left;
     }
@@ -272,7 +296,7 @@
         justify-content: left;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:710px){
     .headermaindiv2{
         /* display: none; */
         flex-direction: column;
@@ -292,7 +316,7 @@
         font-size: 18px;
     }
 }
-@media screen and (max-width:398px){    
+@media screen and (max-width:521px){    
     .headermaindiv2child1{
         display: none;
     }
@@ -301,14 +325,13 @@
 
 /* ======================================================================================================== */
 
-/* below the nav bar tutorials section  */
+/* below the nav bar tutorials section start  */
 
 .tutmaindiv1{
     width: 100%;
     height: auto;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 10%;
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
@@ -319,45 +342,748 @@
     font-size: 20px;
     font-weight: 400;
     padding: 15px;
-    padding-left: 70px;
-    background-color: #04D2C8;
+    padding-left: 150px;
 }
 .tutmaindiv1child2{
-    width: 80%;
+    width: 50%;
     height: auto;
-    display: flex;
-    background-color:brown;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tutmaindiv1child2c1{
-    width: 200px;
-    height: 200px;
+.circle1{
+    width: 40%;
     border-radius: 50%;
-    background-color: olivedrab;
-    display: flex;
-    justify-content: center;
+    background:var(--circlecolor1);
+    line-height: 0;
     position: relative;
+    margin-right: -8%;
+    z-index: -1;
+}  
+.circle1::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
-.tutmaindiv1child2c2{
-    width: 300px;
-    height: 300px;
+.circle2{
+    width: 30%;
     border-radius: 50%;
-    background-color:teal;
+    background: var(--circlecolor2);
+    line-height: 0;
+    position: relative;
+
+} 
+.circle2::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.circle-txt {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;   
+    font-family: var(--font-family2);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--white);
+}
+@media screen and (max-width:1032px) {
+    .tutmaindiv1{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .tutmaindiv1child1{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .tutmaindiv1child2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .circle1{
+        width: 40%;
+        margin-right: 0;
+        z-index: 0;
+    }
+    .circle2{
+        width: 40%;
+    }
+}
+
+/* below the nav bar tutorials section end  */
+/* ======================================================================================================== */
+
+/* below the nav bar popular course section start  */
+
+.popmaindiv1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popmaindiv1child1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+.popmaindiv1child1 h3{
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-bottom: 23px;
+    color: #1F1F1F;
+}
+.popmaindiv1child1 p{
+    font-size: 17px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #727272;
+    margin-bottom: 0;
+}
+.popmaindiv1child2{
+    width: 100%;
+    height: auto;
+    padding: 6% 5% 5% 5%;
+    overflow: hidden;
+}
+.popmaindiv1child2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 30px 0;
+    font-size: 16px;
+    color: #919191; 
+    border-bottom: 1px solid gray;
+}
+.popmaindiv1child2 ul li:hover{
+    border-bottom: 3px solid var(--hoverbtmcolor);
+}
+.popmaindiv1child2 ul li.active {
+    border-bottom: 3px solid var(--hoverbtmcolor);
+}
+.popmaindiv1child3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding:5% 6% 0% 6%;
+}
+.popmaindiv1child3c1{
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 4px #88888847;
+}
+.popmaindiv1child3c1g1{
+    width: 100%;
+    height: auto;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.popmaindiv1child3c1g1 img:hover{
+    transform: scale(1.25);
+    transition: all 1s;
+}
+.popmaindiv1child3c1g2{
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 15px 30px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+}
+.popmaindiv1child3c1g2 a:hover{
+    color: orange;
+    transition: all 0.25s;
+}
+.popmaindiv1child3c1g2 a{    
+    text-decoration: none;
+    outline: medium none;
+    color: var(--txtcolor);
+}
+.popmaindiv1child3c1g2b1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    width: auto;
+    height: auto;
+}
+.star i{
+    color: var(--starcolor);
+}
+.price{
+    width: auto;
+    height: auto;
+}
+.offer{
+    color: #C7C7C7;
+    text-decoration: line-through;
+    margin-right: 14px;
+}
+.active_price{
+    color: #1F1F1F;
+    font-size: 16px;
+}
+.popmaindiv1child5{
+    margin-top: 10%;
+}
+
+@media screen and (max-width:980px) {
+    .popmaindiv1child2 ul{
+        font-size: 12px
+    }
+}
+@media screen and (max-width:805px) {
+    .popmaindiv1child2 ul{
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
+.popmaindiv1child3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popmaindiv1child3c1{
+    width: 41%;
+    margin-top: 5%;
+}
+}
+@media screen and (max-width:594px){
+    .popmaindiv1child3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .popmaindiv1child3c1{
+        width: auto;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:405px){
+    .popmaindiv1child3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 5%;
+        margin-left: 1%;
+
+    }
+    .popmaindiv1child3c1{
+        width: auto;
+        margin-top: 5%;
+    }
+}
+
+/* below the nav bar popular course section end  */
+/* ======================================================================================================== */
+/* BELOW Popular Courses quote section start */
+
+.qmaindiv1{
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+    background-image: url(../project1-pictures/q1.png);
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 160px 0;
+}
+.qmaindiv1c1{
+    width: 100%;
+    text-align: center;
+}
+.qmaindiv1c1 img{
+    height: max-content;
+    width: max-content;
+}
+.qmaindiv1c2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 34px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+    text-align: center!important;
+}
+
+/* BELOW Popular Courses quote section end */
+/* ======================================================================================================== */
+/* BELOW quote section course speciality section start */
+.csmaindiv1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.csmaindiv1child1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15%;
+}
+.csmaindiv1child1 h3{
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-bottom: 23px;
+    color: #1F1F1F;
+}
+.csmaindiv1child1 p{
+    font-size: 17px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #727272;
+    margin-bottom: 0;
+}
+.csmaindiv1child2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 6% 5% 10% 5%;
+}
+
+.csmaindiv1child2g1{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2.5;
+    border: 2px solid #E8E8E8;
+    margin-top:5% ;
+    font: 18px;
+    font-family: var(--font-family2);   
+}
+.csmaindiv1child2g1:hover{
+    background-color: #FD8E5E;
+    transition: all 0.3s;
+    color: var(--white);
+}
+.csmaindiv1child2g1 img{
+    height: 30%;
+    width: 30%;
+}
+@media screen and (max-width:800px) {
+    .csmaindiv1child2g1{
+        width: 40%;
+    }
+}
+@media screen and (max-width:465px) {
+    .csmaindiv1child2{
+        flex-direction: column;
+        padding-left: 15%;
+
+    }
+    .csmaindiv1child2g1{
+        width: 90%;
+    }
+}
+
+/* BELOW quote section course speciality section end */
+/* ======================================================================================================== */
+/* BELOw speciality section newsletter section start */
+
+.nlmaindiv1{
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 5% 5% 5% 5%;
+    background: #04D2C8;
 }
-.tutmaindiv1child2c3{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color:darkgreen;
+.nlmaindiv1c1{
+    width: 60%;
+    line-height: 38px;
+    color: var(--white);
+    margin-bottom: 13px;
+    font-family: var(--font-family2);
+
+}
+.nlmaindiv1c1 h3{
+    font-size: 36px;
+    font-weight: 300;
+}
+.nlmaindiv1c2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.nlform{
+    width: auto;
+    height: auto;
+    display:flex;
+    padding-top: 5%
+
+}
+.nlmaindiv1c2 input{
+    height: 60px;
+    width: 70%;
+    background: #fff;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    float: left;
+    padding: 30px;
+}
+.nlmaindiv1c2 button{
+    background: #FD8E5E;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    width: 30%;
+    height: 60px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+@media screen and (max-width:700px) {
+    .nlmaindiv1{
+        display: flex;
+        flex-direction: column;
+    }
+    .nlmaindiv1c1{
+        width: 100%;
+    }
+    .nlmaindiv1c2{
+        width: 100%;
+    }
+}
+
+/* BELOw speciality section newsletter section start */
+/* ======================================================================================================== */
+/* BELOw newsletter section latest blog section start */
+.lbmadiv1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lbmadiv1child1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15%;
+}
+.lbmadiv1child1 h3{
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-bottom: 23px;
+    color: #1F1F1F;
+}
+.lbmadiv1child1 p{
+    font-size: 17px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #727272;
+    margin-bottom: 0;
+}
+
+.lbmaindiv1child3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding:5% 6% 0% 6%;
+}
+.lbmaindiv1child3c1{
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 4px #88888847;
+}
+.lbmaindiv1child3c1g1{
+    width: 100%;
+    height: auto;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.lbmaindiv1child3c1g1 img:hover{
+    transform: scale(1.25);
+    transition: all 1s;
+}
+.lbmaindiv1child3c1g2{
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 15px 30px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+#dtcolor{
+    color: var(--btncolor);
+}
+.lbmaindiv1child3c1g2 a:hover{
+    color: orange;
+    transition: all 0.25s;
+}
+.lbmaindiv1child3c1g2 a{    
+    text-decoration: none;
+    outline: medium none;
+    color: var(--txtcolor);
+}
+@media screen and (max-width:750px) {
+    .lbmaindiv1child3c1{
+        width: 60%;
+        margin: 5%;
+    }  
+}
+@media screen and (max-width:400px) {
+    .lbmaindiv1child3c1{
+        width: 100%;
+        margin: 5%;
+    } 
+}
+
+/* BELOw newsletter section latest blog section end */
+/* ======================================================================================================== */
+/* BELOw latest blog section footer section start */
+
+
+.fmaindiv1{
+    width: 100%;
+    height: auto;
+    background-image: url(../project1-pictures/footer_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding: 8% 5% 10% 5%;
+    margin-top: 20%;
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.fmaindiv1child1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+.fmaindiv1child1 p{
+    padding-top: 13%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #C7C7C7;
+    margin-bottom: 13px;
+    font-family: "Crimson Text", serif;
+}
+.fmaindiv1child1g1 ul{
+    margin-top: 5%;
+    display: flex;
+    list-style: none;
+}
+.fmaindiv1child1g1 ul li{
+    padding: 5%;
+    margin: 1%;
+    border-radius: 10%;
+    background-color:#8565E2;
+    color: var(--white) !important;
+
+}
+.fmaindiv1child2{
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    color: var(--white);
+    padding-left: 10%;
+}
+.fmaindiv1child2g1 ul{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.fmaindiv1child2g1 ul li{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #C7C7C7;
+}
+.fmaindiv1child2g1 ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 3;
+    color: #C7C7C7;
+}
+@media screen and (max-width:1180px) {
+    .fmaindiv1child2{
+        width: 25%;
+    }
+}
+@media screen and (max-width:616px) {
+    .fmaindiv1{
+        flex-direction: column;
+    }
+    .fmaindiv1child1{
+        width: auto;
+        margin-bottom: 25%;
+    }
 }
 
 
 
 
+
+
+
+
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+
+
+
+
+
+/* login page start */
+.logmaindiv1{
+    width: 100%;
+    height:100vh;
+    background-color: #4B38D2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    /* color: var(--white); */
+}
+.logmaindiv1child1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logmaindiv1child1 h1{
+    padding-top: 2%;
+    font-size: 35px;
+}
+.logmaindiv1child2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 34%;
+    padding-top: 5%;
+}
+.logmaindiv1child2g1{
+    display: flex;
+    flex-direction: column;
+}
+.logmaindiv1child2g1 input{
+    width: 45%;
+    margin-top: 4%;
+    padding: 1.5%;
+}
+.logmaindiv1child2g1 button{
+    width: 45%;
+    margin-top: 4%;
+    padding: 1.5%;
+    background-color: var(--navbtncolor);
+    border:0.5px solid var(--navbtncolor);
+}
+.logmaindiv1child2g1 button:hover{
+    background-color: transparent;
+    color: var(--navbtncolor);
+    border:0.5px solid var(--navbtncolor);
+}
+.doen_have_acc{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 33px;
+    font-weight: 400;
+}
+.dont-hav-acc{
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width:745px) {
+    .logmaindiv1child1{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    .logmaindiv1child2{
+    padding-left: 10%;
+    }
+.logmaindiv1child2g1 input{
+    width: 80%;
+}
+.logmaindiv1child2g1 button{
+    width: 80%;
+}
+}
 
