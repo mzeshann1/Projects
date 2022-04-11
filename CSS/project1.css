@@ -101,8 +101,11 @@ body{
     text-decoration: none;
     color: white;
 }
-.navmaindivchild2 ul li:hover{
-    background-color: #1F1F1F;
+.navmaindivchild2 ul li:hover{  
+      border-bottom: 3px solid red;
+}
+.navmaindivchild2 ul li.active{  
+    border-bottom: 3px solid red;
 }
 
 
@@ -123,6 +126,7 @@ body{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 115px;
+    margin-top: 1%;
 } 
 .dropdown-content a {
     float: none;
