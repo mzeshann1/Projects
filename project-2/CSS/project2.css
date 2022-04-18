@@ -165,7 +165,7 @@ body {
       display: block;
     }
     .navmaindiv1{
-      display: none;
+      display: none !important;
     }
     
   }
