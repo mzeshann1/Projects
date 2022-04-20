@@ -1,0 +1,68 @@
+*{
+    margin: o;
+    padding: 0;
+}
+.social a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin-left: 5%;
+}
+.social a:hover{
+    color:#202140 ;
+    background-color:#EFBD2F;
+}
+
+.topnav{
+    background-color: #202140;
+}
+.topnav li a{
+    color: white !important;
+}
+.topnav li a:hover{
+    background-color: #EFBD2F;
+}
+.ah{
+    background-color: #EFBD2F;
+}
+#c{
+    color: black !important;
+}
+@media screen and (max-width:992px) {
+    .navform{
+        display: block !important;
+    }
+    .menu{
+        display: block !important;
+    }
+    .navform2{
+        display: none !important;
+    }
+    .bt{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+/* input icon */
+.inner-addon { 
+    position: relative; 
+}
+.inner-addon .fa-solid {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.left-addon .fa-solid  { left:  80%;}
+.right-addon .fa-solid { right: 0px;}
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
