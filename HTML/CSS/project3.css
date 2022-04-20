@@ -10,6 +10,19 @@ body{
     --red:red;
     --navb:#FDFDFD;
 }
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 #top_nav li a{
     color: var(--txtblack);
 }
@@ -29,7 +42,6 @@ body{
     border: 1px solid var(--red);
     height: 6vh;
     padding: 1%;
-
 }
 .midhead-mid-child1{
     width: 100%;
