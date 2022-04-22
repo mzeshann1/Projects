@@ -1,5 +1,5 @@
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 .social a{
@@ -48,21 +48,106 @@
         display: flex !important;
         justify-content: center;
         align-items: center;
-    }
-
-    
+    }   
 }
-
 /* input icon */
-.inner-addon { 
-    position: relative; 
-}
-.inner-addon .fa-solid {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
-}
+.inner-addon {position: relative; }
+.inner-addon .fa-solid {position: absolute;padding: 10px;pointer-events: none;}
 .left-addon .fa-solid  { left:  80%;}
 .right-addon .fa-solid { right: 0px;}
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
+.aboutcontainer{
+    margin-top: 10%;
+}
+.aboutcard{
+    padding: 10%;
+}
+.aboutcard1{
+    height:30vh !important;    
+    display: flex;
+    align-items: center;
+}
+.aboutcard2 {
+    transition: transform .10s ease-in-out;
+  }
+  .aboutcard2:hover {
+    transform: rotate(25deg);
+    border: 1px solid red;
+    
+  }
+.aboutcard1 img{
+    height: 10vh;
+    width: 10vh;
+}
+
+
+
+
+
+/* =============================================================== */
+/* our team members end */
+/* =============================================================== */
+
+
+
+/* =========================================== */
+/* work with us start */
+/* ================================================== */
+.work{
+    padding-top: 10%;
+    /* padding-left: 0 !important; */
+    /* padding-right: 0 !important; */
+}
+
+.workmaindiv1child1 img{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.workmaindiv1vhild2{
+    background-image: linear-gradient(#f8f9fafa, rgba(0,0,0,.7)), url(../pictures/h2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex !important;
+    flex-direction: column;
+    padding-top: 8%;
+}
+.workmaindiv1vhild2 h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  padding-left: 6%;
+
+}
+.workmaindiv1vhild2 h5{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  padding-left: 6%;
+}
+.workmaindiv1vhild2 button{
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  width: 30%;
+}
+.l{
+  padding-left: 6%;
+}
+/* =========================================== */
+/* work with us end */
+/* ================================================== */
