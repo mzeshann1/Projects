@@ -603,11 +603,11 @@ h1 {
     top:  0;
     left: 0;
     z-index: 1;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 .counter .counter-icon i.fa{
     transform: rotateX(0deg);
-    transition: all 0.3s ease 0s;
+    /* transition: all 0.3s ease 0s; */
 }
 .counter:hover .counter-icon i.fa{ transform: rotateX(360deg); }
 .counter h3{
