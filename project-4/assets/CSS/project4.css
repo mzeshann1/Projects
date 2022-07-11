@@ -8,11 +8,12 @@
     border: 1px solid black;
     border-radius: 50%;
     font-size: 15px;
-    height: 5vh;
+    height: 4vh;
     display: flex;
     align-items: center;
     padding: 3%;
     margin-left: 5%;
+    margin-top: 15%;
 }
 .social a:hover{
     color:#202140 ;
@@ -73,7 +74,9 @@
     transition: transform .10s ease-in-out;
   }
   .aboutcard2:hover {
-    transform: rotate(25deg);
+    transform: rotate(360deg);
+    transition: transform .80s ease-in-out;
+
     border: 1px solid red;
     
   }
