@@ -25,36 +25,11 @@ ul{
     color: blue;
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    background-color: #149ddd;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-  .mobile-nav-active #header {
-    left: 0;
-  }
-
-
+.hidnav{
+  background-color: #FC6D6D;
+  height: 8vh;
+  width: 100%;
+}
 
 .sidebar{
     position: fixed;
