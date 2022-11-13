@@ -1,0 +1,39 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body{
+    background-color: cadetblue;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+:root{
+    --navbckcol:#040B14;
+    --navimgborder:#2C2F3F;
+    --navhover:#149DDD;
+}
+
+#left{
+    background-color:var(--navbckcol);
+    height:100vh;
+}
+.navicon{
+    background-color: var(--navimgborder);
+    border-radius: 50%;
+}
+.navicon:hover{
+    background-color: var(--navhover);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#right{
+    height: 20vh;
+}
